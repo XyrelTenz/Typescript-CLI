@@ -1,0 +1,429 @@
+🩵 1. Core Fundamentals (Syntax & Types)
+
+What is TypeScript?
+
+Setting up tsconfig.json
+
+Type inference
+
+Explicit type annotations
+
+Primitive types (string, number, boolean, etc.)
+
+null and undefined
+
+any type
+
+unknown type
+
+never type
+
+void return type
+
+object type
+
+symbol type
+
+Template literal types
+
+Type aliases (type Name = ...)
+
+Union types (string | number)
+
+Intersection types (A & B)
+
+Literal types ("success" | "error")
+
+typeof operator for types
+
+keyof operator
+
+Index signatures ({ [key: string]: number })
+
+🧩 2. Functions and Parameters
+
+Function type annotations
+
+Default parameters
+
+Optional parameters (param?: type)
+
+Rest parameters (...args: type[])
+
+Function overloading
+
+Generic functions
+
+Higher-order functions
+
+Function expressions vs declarations
+
+Arrow functions with generics
+
+Return type inference
+
+🧠 3. Objects, Interfaces & Classes
+
+Interfaces (interface User {})
+
+Readonly properties
+
+Optional properties
+
+Extending interfaces (extends)
+
+Type vs Interface differences
+
+Indexable types ([key: string]: any)
+
+Class properties and methods
+
+Access modifiers (public, private, protected)
+
+Static properties/methods
+
+readonly modifier
+
+Class inheritance (extends)
+
+Abstract classes
+
+super() usage
+
+Implementing interfaces in classes
+
+Class generics
+
+Constructor overloads
+
+Getters and setters
+
+Class decorators (intro)
+
+Singleton pattern with TypeScript
+
+Composition over inheritance pattern
+
+💎 4. Advanced Types
+
+Conditional types (T extends U ? X : Y)
+
+Distributive conditional types
+
+Infer keyword (infer U)
+
+Mapped types ({ [K in keyof T]: ... })
+
+Indexed access types (T[K])
+
+Lookup types (T['key'])
+
+Recursive types
+
+Branded types
+
+Utility types (overview)
+
+Partial application with types
+
+🧬 5. Generics (Deep Dive)
+
+Generic functions
+
+Generic interfaces
+
+Generic classes
+
+Default generic values (<T = string>)
+
+Generic constraints (extends)
+
+Key constraints (extends keyof)
+
+Multiple generics (<T, U>)
+
+Conditional generics
+
+Generic factory functions
+
+Real-world generics (API Response, Repository pattern)
+
+⚙️ 6. Built-in Utility Types
+
+Partial<T>
+
+Required<T>
+
+Readonly<T>
+
+Pick<T, K>
+
+Omit<T, K>
+
+Record<K, T>
+
+Exclude<T, U>
+
+Extract<T, U>
+
+NonNullable<T>
+
+Parameters<T>
+
+ConstructorParameters<T>
+
+ReturnType<T>
+
+InstanceType<T>
+
+ThisParameterType<T>
+
+OmitThisParameter<T>
+
+ThisType<T>
+
+Awaited<T>
+
+Uppercase<S>
+
+Lowercase<S>
+
+Capitalize<S>
+
+Uncapitalize<S>
+
+NoInfer<T> (newer TS)
+
+DeepPartial<T> (custom utility)
+
+Mutable<T> (custom utility)
+
+DeepReadonly<T> (custom utility)
+
+PromiseValue<T>
+
+Diff<T, U>
+
+Intersection<T, U>
+
+UnionToIntersection<U>
+
+TupleToUnion<T>
+
+🧰 7. Type Guards & Narrowing
+
+typeof guards
+
+instanceof guards
+
+Custom type guards (value is Type)
+
+in operator
+
+Discriminated unions
+
+Exhaustiveness checking with never
+
+Assertion functions
+
+User-defined type predicates
+
+Optional chaining in guards
+
+Safe property access (?.)
+
+🧱 8. Modules & Namespaces
+
+import and export syntax
+
+Default vs named exports
+
+Type-only imports (import type {})
+
+Re-exporting modules
+
+Module augmentation
+
+Declaration merging
+
+Namespaces (legacy)
+
+Barrel files (index.ts)
+
+Dynamic imports (await import())
+
+Type-only exports (export type)
+
+🧩 9. Type Manipulation & Utility Patterns
+
+Deep cloning types
+
+Flatten array types (Flatten<T>)
+
+Extract function argument types
+
+Extract function return type
+
+Map union types
+
+Opaque/Branded types
+
+Immutable type patterns
+
+Dynamic keyof lookups
+
+Conditional property inclusion
+
+RequiredIf type helper
+
+⚡ 10. Advanced Features
+
+Declaration files (.d.ts)
+
+Ambient module declarations
+
+Type assertions (as)
+
+Non-null assertion (!)
+
+Definite assignment (!:)
+
+Structural typing vs nominal typing
+
+Type erasure
+
+Variance (covariance, contravariance)
+
+Template literal type manipulation
+
+Recursive type constraints
+
+🧠 11. Real-World Patterns
+
+API response models (ApiResponse<T>)
+
+Repository pattern (Repository<T>)
+
+Service layer types
+
+Type-safe events (EventEmitter<T>)
+
+Config schema typing (Config<T>)
+
+Reactivity wrappers (for Vue/Nuxt)
+
+DTOs and validation types
+
+Context-aware types (e.g., SSR vs CSR)
+
+Union discriminators for APIs
+
+Form validation types
+
+🧩 12. Nuxt 3 + TypeScript Integration
+
+Type inference with useFetch()
+
+Defining custom composables with generics
+
+defineProps<T>() and defineEmits<T>()
+
+Component type inference
+
+Auto-imported composables typing
+
+Module augmentation for Nuxt plugins
+
+Typing runtime config
+
+Typing server routes with Nitro
+
+Typing Prisma models in Nuxt
+
+SSR-safe type inference
+
+Using Zod with Nuxt for runtime validation
+
+useAsyncData<T>() typing
+
+Typing API endpoints with defineEventHandler<T>()
+
+Injecting custom interfaces into nuxtApp
+
+Type-safe Pinia stores (defineStore<T>)
+
+🧩 13. Type System Mastery
+
+Homomorphic mapped types
+
+Bivariant function types
+
+Variadic tuple types (...[infer R])
+
+Inference from tuple rest types
+
+Conditional recursive types
+
+Type composition utilities
+
+Advanced discriminated unions
+
+Re-mapping keys with as
+
+Type-level recursion limits
+
+Key remapping patterns
+
+🧪 14. Performance & Compiler Deep Dive
+
+Incremental compilation
+
+TypeScript compiler APIs
+
+Build optimization with skipLibCheck
+
+Project references
+
+Type checking vs transpilation
+
+TypeScript performance debugging
+
+strict mode mastery
+
+Compiler diagnostics
+
+Custom transformers
+
+Path mapping in tsconfig.json
+
+🧰 15. Integration and Real-World Use
+
+Typing REST APIs
+
+Typing GraphQL APIs
+
+Using TypeScript with Prisma ORM
+
+Integrating with Express backends
+
+Type-safe validation with Zod / Yup
+
+Type-safe forms (Vue/Nuxt)
+
+Using TS with Tailwind and UI libs
+
+TS for composable utilities in Vue
+
+Type-safe middleware
+
+Code generation with ts-morph
+
+Typing WebSocket events
+
+Type-safe SSE (Server Sent Events)
+
+Full-stack shared types between API & frontend
+
+Monorepo structure with TS projects
+
+Mastering TS with Nuxt SSR and runtime type safety
