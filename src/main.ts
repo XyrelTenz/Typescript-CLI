@@ -108,6 +108,7 @@ console.log(Introduce(xyrel));
 
 // Generics Keyof
 function getProperty<T, K extends keyof T>(object: T, key: K): T[K] {
+  // PropertyUser's Object with the key values of Name, Age, isAdmin
   return object[key];
 }
 
