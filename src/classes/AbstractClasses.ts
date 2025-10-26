@@ -37,7 +37,7 @@ class Point2 {
   y: number = 0;
 }
 
-const p: Point1 = new Point2();
+const Persons: Point1 = new Point2();
 
 class Person {
   name: string;
@@ -61,7 +61,7 @@ class Employee {
   }
 }
 
-const p: Person = new Employee("Xyrel", 18, 18000);
+const Employees: Person = new Employee("Xyrel", 18, 18000);
 
 // Empty Classes with no Members
 
@@ -70,5 +70,5 @@ class Empty {}
 function fn(x: Empty) {}
 
 fn({});
-fn(window);
+// fn(window);
 fn(fn);
