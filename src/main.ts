@@ -183,3 +183,7 @@ stack.push(3);
 stack.display();
 stack.pop();
 stack.display();
+
+import { SortingArray } from "./DataStructureAndAlgorithm/SortedArray";
+const arrays: number[] = [4, 2, 3, 7, 1];
+console.log(SortingArray(arrays));
