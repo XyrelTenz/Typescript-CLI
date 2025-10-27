@@ -187,3 +187,19 @@ stack.display();
 import { SortingArray } from "./DataStructureAndAlgorithm/SortedArray";
 const arrays: number[] = [4, 2, 3, 7, 1];
 console.log(SortingArray(arrays));
+
+import {
+  Repository,
+  type Student,
+  type Teacher,
+} from "./ObjectOrientedProgramming/Inheritance";
+
+const students = new Repository<Student>([
+  {
+    id: 1,
+    name: "Xyrel",
+    grade: 90,
+  },
+]);
+
+console.log(students);

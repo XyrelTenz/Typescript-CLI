@@ -13,5 +13,5 @@ export function SortingArray(arr: number[]): number[] {
   return arrays;
 }
 
-const arrays: number[] = [4, 2, 3, 7, 1];
-console.log(SortingArray(arrays));
+// const arrays: number[] = [4, 2, 3, 7, 1];
+// console.log(SortingArray(arrays));
