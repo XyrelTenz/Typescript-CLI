@@ -170,21 +170,7 @@ setTimeout(() => {
   console.log("Sucessfully Login....");
 }, 1000);
 
-import { Descriptor } from "./decorators/Decorators";
-
-class User {
-  name: string;
-  age: number;
-
-  constructor(name: string, age: number) {
-    this.name = name;
-    this.age = age;
-  }
-  @Descriptor
-  sayHello() {
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old`);
-  }
-}
+import { User } from "./decorators/Decorators";
 
 const userss = new User("Xyrel", 18);
-userss.sayHello();
+userss.getName();

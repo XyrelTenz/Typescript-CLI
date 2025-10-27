@@ -1,4 +1,4 @@
-export function Descriptor(
+function Descriptor(
   target: any,
   propertyKey: string,
   descriptor: PropertyDescriptor,
@@ -12,4 +12,17 @@ export function Descriptor(
   };
 
   return descriptor;
+}
+export class User {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+  @Descriptor
+  getName() {
+    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old`);
+  }
 }
