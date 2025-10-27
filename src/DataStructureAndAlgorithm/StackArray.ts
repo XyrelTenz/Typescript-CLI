@@ -1,34 +1,42 @@
+/*
+1. Check if Items is Empty
+2. Check if Items is Full
+3. Pop the Items into Array
+4. Push the Items to Array
+5. Dsiplay Items
+*/
 export class StackArray<T> {
-  private Items: T[] = [];
+  private items: T[] = [];
   private size: number;
 
   constructor(size: number) {
     this.size = size;
   }
 
-  isEmpty(): boolean {
-    return this.Items.length === 0;
+  isempty(): boolean {
+    return this.items.length === 0;
   }
 
   isFull(): boolean {
-    return this.Items.length === this.size;
+    return this.items.length === this.size;
   }
 
   pop(): T | undefined {
-    if (this.isEmpty()) {
+    if (this.isFull()) {
       return undefined;
     }
-    return this.Items.pop();
+
+    return this.items.pop();
   }
 
-  push(element: T): void {
+  push(elements: T): void {
     if (this.isFull()) {
-      throw new Error("Stack is full");
+      throw new Error("Items Full");
     }
-    this.Items.push(element);
+    this.items.push(elements);
   }
 
   display(): void {
-    console.log(this.Items);
+    console.log(this.items);
   }
 }

@@ -230,3 +230,9 @@ import { wrap } from "./DataStructureAndAlgorithm/GenericsFunction";
 
 console.log(wrap(["Xyrel", "Xyrel"]));
 console.log(wrap([1, 3, 4, 5]));
+
+import { config } from "./DataStructureAndAlgorithm/TypeAssertion";
+
+console.log((config.version = "2.0"));
+
+// const newConfig = (config.version = "2.0");
