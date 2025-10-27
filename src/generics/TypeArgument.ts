@@ -14,10 +14,10 @@ interface Pair<T, U> {
   age: U;
 }
 
-let pairs = (Pair<string, number> = {
+let pairs: Pair<string, number> = {
   name: "Xyrel",
   age: 18,
-});
+};
 
 console.log(pairs);
 
@@ -52,7 +52,8 @@ function LoggingIdentity<T extends LengthWise>(arg: T): T {
 LoggingIdentity("Xyrel");
 
 //Type Argument with Default Type
-
 function createPair<T = string, U = number>(): Pair<T, U> {
   return Pair<T, U>;
 }
+let defaultPair = createPair();
+console.log(defaultPair);

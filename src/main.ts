@@ -174,3 +174,12 @@ import { User } from "./decorators/Decorators";
 
 const userss = new User("Xyrel", 18);
 userss.getName();
+
+import { StackArray } from "./DataStructureAndAlgorithm/StackArray";
+const stack = new StackArray<number>(5);
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.display();
+stack.pop();
+stack.display();
