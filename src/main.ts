@@ -211,3 +211,9 @@ console.log(sumNNumbers("5", "5"));
 import { printId } from "./DataStructureAndAlgorithm/UnionType";
 
 console.log(printId(5));
+
+import { PrintUser } from "./DataStructureAndAlgorithm/InterfacesOptionalProps";
+
+const userInfo = PrintUser({ name: "Xyrel", role: "Web Developer" });
+
+console.log(userInfo);
