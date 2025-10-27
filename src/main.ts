@@ -203,3 +203,11 @@ const students = new Repository<Student>([
 ]);
 
 console.log(students);
+
+import { sumNNumbers } from "./DataStructureAndAlgorithm/SumNumber";
+
+console.log(sumNNumbers("5", "5"));
+
+import { printId } from "./DataStructureAndAlgorithm/UnionType";
+
+console.log(printId(5));
