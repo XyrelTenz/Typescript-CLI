@@ -6,12 +6,12 @@ interface User {
 
 export function PrintUser(user: User): {
   name: string;
-  age: number | undefined;
+  age: number;
   role: string;
 } {
   return {
     name: user.name,
-    age: user.age,
+    age: user.age ?? 0,
     role: user.role,
   };
 }
