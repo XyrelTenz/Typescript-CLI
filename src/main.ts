@@ -217,3 +217,16 @@ import { PrintUser } from "./DataStructureAndAlgorithm/InterfacesOptionalProps";
 const userInfo = PrintUser({ name: "Xyrel", role: "Web Developer" });
 
 console.log(userInfo);
+
+import { getRole } from "./DataStructureAndAlgorithm/RoleBaseEnum";
+
+console.log(getRole(4));
+
+import { DisplayTuple } from "./DataStructureAndAlgorithm/TupleInfo";
+
+console.log(DisplayTuple(["Xyrel", 18]));
+
+import { wrap } from "./DataStructureAndAlgorithm/GenericsFunction";
+
+console.log(wrap(["Xyrel", "Xyrel"]));
+console.log(wrap([1, 3, 4, 5]));

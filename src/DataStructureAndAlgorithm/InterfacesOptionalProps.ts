@@ -11,7 +11,7 @@ export function PrintUser(user: User): {
 } {
   return {
     name: user.name,
-    age: user.age ?? 0,
+    age: (user.age ??= 0),
     role: user.role,
   };
 }
