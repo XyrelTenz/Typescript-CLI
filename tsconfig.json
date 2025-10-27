@@ -10,6 +10,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "target": "ESNext",
+    "experimentalDecorators": true,
     "allowImportingTsExtensions": false,
     "types": [],
     // For nodejs:
