@@ -237,3 +237,8 @@ import { config } from "./DataStructureAndAlgorithm/TypeAssertion";
 console.log(config.version);
 
 // const newConfig = (config.version = "2.0");
+
+import { Sum } from "./DataStructureAndAlgorithm/HighOrderFunction";
+
+const result = Sum(10, 5, ({ a, b }) => a + b);
+console.log(result);
